@@ -30,7 +30,7 @@ public class Test {
     public static float calculateCustomeA(float appleWeight,float strawberryWeight){
         Apple apple1=new Apple(8,appleWeight,1);
         Strawberry strawberry1=new Strawberry(13,strawberryWeight,1);
-        return apple1.calculatePay()+ strawberry1.calculatePay();
+        return Math.round(apple1.calculatePay()+ strawberry1.calculatePay());
 
     }
 
@@ -38,21 +38,21 @@ public class Test {
         Apple apple2=new Apple(8,appleWeight,1);
         Strawberry strawberry2=new Strawberry(13,strawberryWeight,1);
         Mango mango2=new Mango(20,mangoWeight,1);
-        return apple2.calculatePay()+ strawberry2.calculatePay()+ mango2.calculatePay();
+        return Math.round(apple2.calculatePay()+ strawberry2.calculatePay()+ mango2.calculatePay());
     }
 
     public static float calculateCustomeC(float appleWeight,float strawberryWeight,float mangoWeight){
         Apple apple3=new Apple(8,appleWeight,1);
         Strawberry strawberry3=new Strawberry(13,strawberryWeight,0.8f);
         Mango mango3=new Mango(20,mangoWeight,1);
-        return apple3.calculatePay()+ strawberry3.calculatePay()+ mango3.calculatePay();
+        return Math.round(apple3.calculatePay()+ strawberry3.calculatePay()+ mango3.calculatePay());
     }
 
     public static float calculateCustomeD(float appleWeight,float strawberryWeight,float mangoWeight){
         Apple apple3=new Apple(8,appleWeight,1);
         Strawberry strawberry3=new Strawberry(13,strawberryWeight,0.8f);
         Mango mango3=new Mango(20,mangoWeight,1);
-        float pay3=apple3.calculatePay()+ strawberry3.calculatePay()+ mango3.calculatePay();
+        float pay3=Math.round(apple3.calculatePay()+ strawberry3.calculatePay()+ mango3.calculatePay());
         if(pay3>=100){
             return pay3-10;
         }
